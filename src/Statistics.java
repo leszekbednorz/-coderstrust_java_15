@@ -12,6 +12,12 @@ public class Statistics {
     }
 
     public double getAverage(double[] values){
-        return 2;
+        double sum = 0;
+
+        for(double number:  values ) {
+            sum = sum + number;
+        }
+
+        return sum/values.length;
     }
 }
